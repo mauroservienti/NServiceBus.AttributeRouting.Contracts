@@ -2,7 +2,7 @@
 
 namespace NServiceBus.AttributeRouting.Contracts
 {
-    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = false)]
+    [AttributeUsage(AttributeTargets.Class, Inherited = false)]
     public class RouteToAttribute : Attribute
     {
         public RouteToAttribute(string destination)
@@ -10,6 +10,6 @@ namespace NServiceBus.AttributeRouting.Contracts
             Destination = destination;
         }
 
-        public string Destination { get; private set; }
+        public string Destination { get; }
     }
 }
