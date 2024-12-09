@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NServiceBus.AttributeRouting.Contracts
+namespace NServiceBus.AttributeRouting
 {
     [AttributeUsage(AttributeTargets.Class, Inherited = false)]
     public class RouteToAttribute : Attribute
