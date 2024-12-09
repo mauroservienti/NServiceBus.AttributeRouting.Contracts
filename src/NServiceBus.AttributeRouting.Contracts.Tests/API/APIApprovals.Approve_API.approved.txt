@@ -1,15 +1,14 @@
-[assembly: System.Reflection.AssemblyMetadata("RepositoryUrl", "")]
-[assembly: System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v2.0", FrameworkDisplayName="")]
+[assembly: System.Reflection.AssemblyMetadata("RepositoryUrl", "https://github.com/mauroservienti/NServiceBus.AttributeRouting.Contracts")]
 namespace NServiceBus.AttributeRouting.Contracts
 {
-    [System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.All)]
+    [System.AttributeUsage(System.AttributeTargets.Assembly)]
     public class RouteAttribute : System.Attribute
     {
         public RouteAttribute(string commandsTo = null, string messagesTo = null) { }
         public string CommandsDestination { get; }
         public string MessagesDestination { get; }
     }
-    [System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.All, Inherited=false)]
+    [System.AttributeUsage(System.AttributeTargets.Class, Inherited=false)]
     public class RouteToAttribute : System.Attribute
     {
         public RouteToAttribute(string destination) { }
