@@ -1,5 +1,5 @@
 [assembly: System.Reflection.AssemblyMetadata("RepositoryUrl", "https://github.com/mauroservienti/NServiceBus.AttributeRouting.Contracts")]
-namespace NServiceBus.AttributeRouting.Contracts
+namespace NServiceBus.AttributeRouting
 {
     [System.AttributeUsage(System.AttributeTargets.Assembly)]
     public class RouteAttribute : System.Attribute
